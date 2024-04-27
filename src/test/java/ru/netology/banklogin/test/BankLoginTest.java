@@ -57,17 +57,4 @@ public class BankLoginTest {
         verificationPage.verifyErrorNotification("Ошибка! \nНеверно указан код! Попробуйте ещё раз.");
     }
 
-/*    @Test
-    @DisplayName("Should block user if he input invalid code three times")
-    void shouldBlockUserIfInputInvalidCodeThreeTimes() {
-        var authInfo = DataHelper.getAuthInfoWithTestData();
-        var verificationPage = loginPage.validLogin(authInfo);
-        var verificationCode = DataHelper.generateRandomVerificationCode();
-        verificationPage.verify(verificationCode.getCode());
-        verificationPage.verifyErrorNotification("Ошибка! Неверно указан код! Попробуйте ещё раз.");
-        verificationPage.verify(verificationCode.getCode());
-        verificationPage.verifyErrorNotification("Ошибка! Неверно указан код! Попробуйте ещё раз.");
-        verificationPage.verify(verificationCode.getCode());
-        verificationPage.verifyErrorNotification("Система заблокирована!");
-    }*/
 }
