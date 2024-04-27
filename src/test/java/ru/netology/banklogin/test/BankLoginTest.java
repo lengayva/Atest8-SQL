@@ -64,9 +64,9 @@ public class BankLoginTest {
         var verificationPage = loginPage.validLogin(authInfo);
         var verificationCode = DataHelper.generateRandomVerificationCode();
         verificationPage.verify(verificationCode.getCode());
-        verificationPage.verifyErrorNotification("Неверно указан код! Попробуйте ещё раз.");
+        verificationPage.verifyErrorNotification("Ошибка! Неверно указан код! Попробуйте ещё раз.");
         verificationPage.verify(verificationCode.getCode());
-        verificationPage.verifyErrorNotification("Неверно указан код! Попробуйте ещё раз.");
+        verificationPage.verifyErrorNotification("Ошибка! Неверно указан код! Попробуйте ещё раз.");
         verificationPage.verify(verificationCode.getCode());
         verificationPage.verifyErrorNotification("Система заблокирована!");
     }
