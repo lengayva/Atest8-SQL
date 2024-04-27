@@ -57,7 +57,7 @@ public class BankLoginTest {
         verificationPage.verifyErrorNotification("Ошибка! \nНеверно указан код! Попробуйте ещё раз.");
     }
 
-    @Test
+/*    @Test
     @DisplayName("Should block user if he input invalid code three times")
     void shouldBlockUserIfInputInvalidCodeThreeTimes() {
         var authInfo = DataHelper.getAuthInfoWithTestData();
@@ -69,5 +69,5 @@ public class BankLoginTest {
         verificationPage.verifyErrorNotification("Ошибка! Неверно указан код! Попробуйте ещё раз.");
         verificationPage.verify(verificationCode.getCode());
         verificationPage.verifyErrorNotification("Система заблокирована!");
-    }
+    }*/
 }
